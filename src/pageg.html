@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var vGlobal='this is global';
+        function scopeFunction(){
+          alsoGlobal='this is also global';
+          var vNotGlobal='this is private and scoped to the function';
+          function subFunction(){
+              console.log(`inside subfunction: ${vNotGlobal}`);
+              stillGlobal='no var keyword so this is global';
+              var isPrivate='this is private to sub function';
+          }
+          subFunction();
+        //   console.log(isPrivate); this wont work because outside the func block
+        }
+    console.log(vGlobal);
+    // console.log(alsoGlobal);
+    // console.log(stillGlobal);
+     scopeFunction();
+    console.log(alsoGlobal);
+    // console.log(vNotGlobal);
+    console.log(stillGlobal);
+    </script>
+</body>
+</html>
