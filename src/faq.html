@@ -1,69 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="faq.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./faq-accordion-card-main/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./faq-accordion-card-main/images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kumbh+Sans">
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+    <title>Frontend Mentor | FAQ Accordion Card</title>
 
-  <link rel="stylesheet" href="faq.css">
-</head>
-<body>
-  <div class="main">
-    <div class="flex">
-      <div class="box" id="box"><img src="./faq-accordion-card-main/images/illustration-box-desktop.svg" alt="box"></div>
-      <div class="flex-items flex-bg">
-        <div class="bg"><img id="bg" src="./faq-accordion-card-main/images/bg-pattern-desktop.svg" alt="bg"></div>
-        <div class="woman"><img id="woman" src="./faq-accordion-card-main/images/illustration-woman-online-desktop.svg" alt="woman"></div>
-      </div>
-      <div class="flex-items faq-list">
-        <div class="faq">FAQ</div>
-        <div class="qa">
-          <div class="question">
-            <div>How many team members can I invite?</div>
-            <div class="arrow"><img src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="arrow"></div>
-          </div>
-          <div class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on 
-          team members for the Premium plan.</div>
-        </div>
-        <div class="qa">
-          <div class="question">
-            <div>What is the maximum file upload size?</div>
-            <div class="arrow"><img src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="arrow"></div>
-          </div>
-          <div class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</div>
-        </div>
-        <div class="qa">
-          <div class="question">
-            <div>How do I reset my password?</div>
-            <div class="arrow"><img src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="arrow"></div>
-          </div>
-          <div class="answer">Click “Forgot password” from the login page or “Change password” from your profile page.
-          A reset link will be emailed to you.</div>
-        </div>
-        <div class="qa">
-          <div class="question">
-            <div>Can I cancel my subscription?</div>
-            <div class="arrow"><img src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="arrow"></div>
-          </div>
-          <div class="answer">Yes! Send us a message and we’ll process your request no questions asked.</div>
-        </div>
-        <div class="qa">
-          <div class="question">
-            <div>Do you provide additional support?</div>
-            <div class="arrow"><img src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="arrow"></div>
-          </div>
-          <div class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
-        </div>
-      </div>
+  </head>
+  <body>
+    <main>
+    <div class="img-container">
+      <img class="image mobile" src="./faq-accordion-card-main/images/illustration-woman-online-mobile.svg" alt="">
+      <img class="image shadow mobile" src="./images/bg-pattern-mobile.svg" alt="">
+
+
+      
+      <img class="hidden" src="./faq-accordion-card-main/images/illustration-woman-online-desktop.svg" alt="">
+      <img class="box" src="./faq-accordion-card-main/images/illustration-box-desktop.svg" alt="">
     </div>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/akilaak2701">AKILA SRI</a>.
-  </div>
-</body>
-<script src="fa1.js"></script>
+    
+    <section>
+      <h1 class="title">FAQ</h1>
+
+      <div class="question_container">
+        <div class="item">
+          <p class="question">How many team members can I invite?</p>
+          <img class="arrow" src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="">
+        </div>
+        
+        <p class="answer">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+      </div>
+      
+      <div class="question_container">
+        <div class="item">
+          <p class="question">What is the maximum file upload size?</p>
+          <img class="arrow" src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="">
+        </div>
+        
+        <p class="answer">No more than 2GB. All files in your account must fit your allotted storage space.</p> 
+      </div>
+      
+      <div class="question_container">
+        <div class="item">
+          <p class="question">How do I reset my password?</p>
+          <img class="arrow" src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="">
+        </div>
+        
+        <p class="answer">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+      </div>
+      
+      <div class="question_container">
+        <div class="item">
+          <p class="question">Can I cancel my subscription?</p>
+          <img class="arrow" src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="">
+        </div>
+        
+        <p class="answer">Yes! Send us a message and we’ll process your request no questions asked.</p>
+      </div>
+      
+      <div class="question_container">
+        <div class="item">
+          <p class="question">Do you provide additional support?</p>
+          <img class="arrow" src="./faq-accordion-card-main/images/icon-arrow-down.svg" alt="">
+        </div>
+        
+        <p class="answer">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+      </div>
+      
+    </section>
+  
+  </main>
+  </body>
+  <script src="faq.js"></script>
 </html>
