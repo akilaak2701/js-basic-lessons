@@ -141,9 +141,6 @@ button:focus {
   display: none;
 }
 
-/*
-* MOBILE SITE
-*/
 
 @media screen and (max-width: 1020px) {
   body {
@@ -157,7 +154,6 @@ button:focus {
   .container {
     margin: 0;
     height: auto;
-    /* width: 100%; */
     min-width: 100%;
     padding: 0 1rem;
   }
