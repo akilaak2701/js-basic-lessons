@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./advice-generator-app-main/images/favicon-32x32.png" type="image/x-icon" />
-    <link rel="stylesheet" href="article.css" />
-    <title>Advice Generator App</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="title">Advice #</h1>
-      <p class="text"></p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-      <picture>
-        <source
-          media="(min-width: 768px)"
-          img src="./advice-generator-app-main/images/pattern-divider-desktop.svg">
-        <img src="./advice-generator-app-main/images/pattern-divider-mobile.svg" alt="divider" />
-      </picture>
+  <link rel="icon" type="image/png" sizes="32x32" href="../src/advice-generator-app-main/images/favicon-32x32.png">
+  <link rel="stylesheet" href="advice.css">
+  
+  <title> Advice generator app</title>
 
-      <div>
-        <button onclick="fetchAdvice()">
-          <img src="./advice-generator-app-main/images/icon-dice.svg" alt="" />
-        </button>
-      </div>
+  <style>
+    .attribution { font-size: 11px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="title">Advice #117</div>
+    <div class="descr">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</div>
+    <img class="divider" src="../src/advice-generator-app-main/images/pattern-divider-desktop.svg" alt="divider">
+    <div class="dice">
+      <img src="../src/advice-generator-app-main/images/icon-dice.svg" alt="icon">
     </div>
-
-    <script src="article.js"></script>
-  </body>
+  </div>
+  
+  <script src="advice.js"></script>
+</body>
 </html>
