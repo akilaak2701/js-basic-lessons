@@ -4,8 +4,6 @@ const duration = document.querySelector('.month')
 const price = document.querySelector('.price .pricefix')
 const switcher = document.querySelector('.switch')
 const range = document.querySelector('.myrange')
-
-// generate price on switch
 switcher.onclick = function () {
   if (myCheckbox.checked == true) {
     const priceInt = parseInt(price.textContent)
@@ -16,8 +14,6 @@ switcher.onclick = function () {
     duration.textContent = '/month'
   }
 }
-
-// generate price on range
 const pageViews = document.querySelector('.page-views span')
 range.addEventListener('input', refreshPrices)
 
