@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*,
+* *,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  background: url("../challenges/downloads/intro-component-with-signup-form-master/intro-component-with-signup-form-master/images/bg-intro-mobile.png")
+    #ff7a7a;
+  background-position: center;
+  background-repeat: repeat;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+}
+.content {
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+.content h1 {
+  line-height: 1.25em;
+}
+footer {
+  color: white;
+  font-size: smaller;
+  text-align: center;
+}
+footer a {
+  color: inherit;
+}
+input[type="submit"] {
+  background-color: #38cc8c;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 0.3em 0px 0px #2fb179;
+  color: white;
+  cursor: pointer;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding-top: 6px;
+  text-transform: uppercase;
+}
+input[type="submit"]:hover {
+  background-color: #44e49f;
+  box-shadow: 0px 0.3em 0px 0px #38cc8c;
+}
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: min(100vw, 600px);
+  min-height: 100vh;
+}
+.signup {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1.5em;
+  padding: 1em;
+  text-align: center;
+}
+.signup__pricing,
+.signup__form {
+  border-radius: 8px;
+}
+.signup__pricing {
+  background-color: #6055a5;
+  box-shadow: 0px 0.45em 0px 0px #df6d6d;
+  color: white;
+  font-size: 0.8em;
+  padding: 0.5em;
+  text-align: inherit;
+}
+.signup__form {
+  background-color: white;
+  box-shadow: 0px 0.45em 0px 0px #df6d6d;
+  padding: 1.5em;
+  position: relative;
+}
+.signup__form input {
+  font-family: inherit;
+  font-weight: bolder;
+  height: 3em;
+  margin-top: 0.9em;
+  padding: 0 1em;
+  width: 100%;
+}
+.signup__form input:not([type="submit"]) {
+  border-radius: 4px;
+  border: 1px solid #e4e2e2;
+}
+.signup__form input + span.error-icon {
+  padding-top: 1.25em;
+  position: absolute;
+  right: 2.5em;
+}
+.signup__form input + span.error-icon img {
+  height: 1em;
+  width: 1em;
+}
+.signup__form input ~ span.error-message {
+  color: #ff7a7a;
+  display: block;
+  font-size: 0.65em;
+  font-style: italic;
+  font-weight: 500;
+  padding-top: 0;
+  position: relative;
+  text-align: right;
+  width: 100%;
+}
+.signup__form input.error {
+  border: 2px solid #ff7a7a;
+}
+.terms-notice {
+  color: #b9b6d3;
+  display: block;
+  font-size: 0.75em;
+  margin-top: 1em;
+  padding: 0.5em;
+}
+.terms-notice span {
+  color: #ff7a7a;
+  font-weight: bolder;
+}
+@media (min-width: 768px) {
+  body {
+    background-position: center;
+    background-repeat: repeat;
+    background: url("../challenges/downloads/intro-component-with-signup-form-master/intro-component-with-signup-form-master/images/bg-intro-desktop.png"),
+      #ff7a7a;
+  }
+}
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    gap: 1em;
+    max-width: min(90vw, 1000px);
+  }
+  main > * {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .content {
+    font-size: 0.9em;
+    padding: 1.5em;
+    text-align: left;
+  }
+  .content h1 {
+    font-size: 2.5em;
+  }
+}

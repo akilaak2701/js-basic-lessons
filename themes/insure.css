@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Display|Karla:400,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.attribution {
+  margin-top: 8rem;
+  padding-bottom: 3.2rem;
+}
+.attribution p {
+  text-align: center;
+}
+.attribution a {
+  color: var(--darkViolet);
+  letter-spacing: 0;
+  text-decoration: underline;
+  text-transform: initial;
+}
+a,
+.footer-nav-card p,
+.attribution p {
+  font-size: 1.3rem;
+}
+a,
+.footer-nav-card p {
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a,
+p {
+  font-family: "Karla";
+}
+a,
+.footer-social-icons a img {
+  transition: 0.2s;
+}
+.button,
+#view-plans {
+  border: 1px solid;
+  padding: 1rem 2.4rem;
+}
+.button {
+  border-color: var(--VeryLightGray);
+  color: var(--VeryLightGray);
+  display: inline-block;
+}
+.button:hover {
+  background-color: var(--VeryLightGray);
+  color: var(--darkViolet);
+}
+#banner {
+  margin-top: 16rem;
+}
+.banner-content {
+  align-items: center;
+  background-color: var(--darkViolet);
+  background-image: url("../challenges/downloads/insure-landing-page-master/images/bg-pattern-how-we-work-desktop.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+  min-height: 25rem;
+  padding: 0 8rem;
+}
+.banner-content h2 {
+  color: var(--VeryLightGray);
+  line-height: 1;
+}
+.bg-intro-right--mobile {
+  display: block;
+}
+.bg-intro-right--mobile {
+  position: absolute;
+  right: 0;
+  transform: translateY(-138px);
+}
+.banner-content {
+  background-image: url("../challenges/downloads/insure-landing-page-master/images/bg-pattern-how-we-work-mobile.svg");
+}
+.bg-intro-left--desktop {
+  position: absolute;
+  transform: translateY(-64%);
+}
+.bg-intro-right--desktop-area {
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.bg-intro-right--desktop {
+  transform: translateY(-80px);
+}
+.container {
+  margin: auto;
+  max-width: 1440px;
+  padding: 0 16.5rem;
+}
+.divider-lightGray,
+.divider-violet {
+  height: 1px;
+  margin-bottom: 5.6rem;
+  width: 15rem;
+}
+.divider-lightGray {
+  background-color: var(--VeryLightGray);
+}
+.divider-violet {
+  background-color: #c396c6;
+}
+#different {
+  margin-top: 30rem;
+}
+#different h1,
+h2 {
+  color: var(--VeryDarkViolet);
+}
+.different-cards {
+  margin-top: 8rem;
+}
+.different-card {
+  flex: 1;
+}
+.different-card:nth-child(2) {
+  padding: 0 3.2rem;
+}
+.different-card h2 {
+  margin-top: 3.2rem;
+}
+.different-card p {
+  color: var(--DarkGrayishViolet);
+  margin-top: 1.6rem;
+}
+#different h2 {
+  font-size: 2.8rem;
+}
+#footer {
+  background-color: var(--VeryLightGray);
+  background-image: url("../challenges/downloads/insure-landing-page-master/images/bg-pattern-footer-desktop.svg");
+  background-repeat: no-repeat;
+  margin-top: 15rem;
+  padding-top: 6.4rem;
+}
+.footer-socials {
+  align-items: center;
+  border-bottom: 1px solid #dcdcdc;
+  justify-content: space-between;
+  padding-bottom: 3.2rem;
+}
+.footer-social-icons a {
+  align-items: center;
+  display: flex;
+  margin-left: 1.6rem;
+}
+.footer-social-icons img:hover {
+  cursor: pointer;
+  filter: brightness(0.3);
+}
+.footer-nav {
+  margin-top: 4.8rem;
+}
+.footer-nav-card {
+  margin-right: 3rem;
+  min-width: 25.5rem;
+}
+.footer-nav-card p {
+  color: var(--DarkGrayishViolet);
+  margin-bottom: 3.2rem;
+}
+.footer-nav-card ul li {
+  margin-bottom: 1.6rem;
+}
+.footer-nav-card a {
+  color: var(--darkViolet);
+}
+.footer-nav-card a:hover {
+  text-decoration: underline;
+}
+html {
+  font-size: 10px;
+}
+h1,
+h2 {
+  font-weight: normal;
+}
+h1,
+h2 {
+  font-family: "DM Serif Display", serif;
+}
+h1 {
+  font-size: 7.2rem;
+}
+h2 {
+  font-size: 5.6rem;
+}
+.header-content {
+  align-items: center;
+  height: 8rem;
+  justify-content: space-between;
+}
+.header-menu li {
+  margin-left: 2.4rem;
+}
+.header-menu li a {
+  color: var(--DarkGrayishViolet);
+}
+.header-menu li a:hover {
+  color: var(--VeryDarkViolet);
+}
+.header-menu li #view-plans {
+  border-color: var(--VeryDarkViolet);
+  color: var(--VeryDarkViolet);
+}
+.header-menu li #view-plans:hover {
+  background-color: var(--VeryDarkViolet);
+  color: var(--VeryLightGray);
+}
+.intro-img--mobile,
+.bg-intro-right--mobile {
+  display: none;
+}
+.intro-content {
+  background-color: var(--darkViolet);
+  height: 60rem;
+  padding-top: 10.4rem;
+  position: relative;
+}
+.intro-content-left,
+.intro-content-right {
+  flex: 1;
+}
+.intro-content-left {
+  color: var(--VeryLightGray);
+}
+.intro-content-left h1 {
+  line-height: 0.9;
+}
+.intro-content-left p {
+  margin: 3rem 0;
+  padding-right: 1.6rem;
+}
+.intro-content-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.mobile-btn {
+  display: none;
+}
+p {
+  line-height: 1.7;
+}
+p {
+  font-size: 1.6rem;
+}
+:root {
+  --DarkGrayishViolet: hsl(273, 4%, 51%);
+  --GrayishBlue: hsl(216, 30%, 68%);
+  --VeryDarkViolet: hsl(270, 9%, 17%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --darkViolet: hsl(256, 26%, 20%);
+}
+.row {
+  display: flex;
+}
+ul li {
+  list-style: none;
+}
+@media (max-width: 1420px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  #different,
+  #banner,
+  #footer {
+    margin-top: 10rem;
+  }
+  .intro-content {
+    background-image: url("../challenges/downloads/insure-landing-page-master/images/bg-pattern-intro-left-mobile.svg");
+    background-repeat: no-repeat;
+    height: auto;
+    padding: 1.6rem 0;
+  }
+  .intro-content .container {
+    align-items: center;
+  }
+  .intro-content-left .divider-lightGray,
+  .bg-intro-right--desktop-area,
+  .bg-intro-left--desktop {
+    display: none;
+  }
+  .footer-nav-card {
+    flex: 1;
+    margin: 0;
+    min-width: 0;
+  }
+}
+@media (max-width: 1149px) {
+  .container {
+    padding: 0 2.4rem;
+  }
+}
+@media (max-width: 850px) {
+  #different,
+  .footer-nav,
+  .banner-content {
+    text-align: center;
+  }
+  .different-cards,
+  .footer-nav,
+  .footer-socials,
+  .banner-content {
+    flex-direction: column;
+  }
+  .divider-violet {
+    margin-bottom: 5.6rem;
+    margin: auto;
+  }
+  .mobile-btn {
+    display: block;
+  }
+  .header-nav {
+    background-color: var(--VeryDarkViolet);
+    background-image: url("../challenges/downloads/insure-landing-page-master/images/bg-pattern-mobile-nav.svg");
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+    height: calc(100vh - 80px);
+    left: 0;
+    position: absolute;
+    top: 80px;
+    width: 100vw;
+    z-index: 99;
+  }
+  .show {
+    display: block;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .header-menu {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-menu li a,
+  .header-menu li #view-plans {
+    color: var(--VeryLightGray);
+    font-size: 2rem;
+    width: 90%;
+  }
+  .header-menu li {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 4rem;
+  }
+  .header-menu li #view-plans {
+    border-color: var(--VeryLightGray);
+    padding: 1.6rem;
+  }
+  .intro-content-right-img {
+    width: 100%;
+  }
+  .different-card {
+    margin-bottom: 5.6rem;
+  }
+  .banner-content {
+    justify-content: center;
+    padding: 0;
+  }
+  .banner-content .button {
+    margin-top: 3.2rem;
+  }
+  .footer-socials .logo {
+    margin-bottom: 3.2rem;
+  }
+  .footer-social-icons a {
+    margin: 0 0.8rem;
+  }
+  .footer-nav-card {
+    margin-bottom: 3.2rem;
+  }
+}
+@media (max-width: 735px) {
+  .intro-img--mobile {
+    display: block;
+    width: 100%;
+  }
+  .intro-content .container {
+    padding: 10rem 2rem;
+  }
+  .intro-content-left {
+    text-align: center;
+  }
+  .intro-content-left p {
+    padding: 0;
+  }
+  .intro-content-right {
+    display: none;
+  }
+  .banner-content {
+    padding: 8rem 2.4rem;
+  }
+}

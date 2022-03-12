@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.arrow.rotate {
+  transform: rotate(180deg);
+}
+.answer {
+  color: hsl(240, 6%, 50%);
+  display: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.1px;
+  margin-top: 0.7rem;
+  transition: display;
+}
+.answer.show {
+  display: block;
+}
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-family: "Kumbh Sans", sans-serif;
+  min-height: 100vh;
+  padding: 9rem 1.5rem;
+  position: relative;
+}
+footer {
+  bottom: 10px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.hidden,
+.box {
+  display: none;
+}
+.image {
+  left: 15%;
+  position: absolute;
+  top: -6.4rem;
+  width: 70%;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.item img {
+  object-fit: contain;
+}
+main {
+  background-color: white;
+  border-radius: 20px;
+  max-height: 700px;
+  position: relative;
+}
+.question {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+.question:hover {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+.question.active {
+  color: black;
+  font-weight: bold;
+}
+.question_container {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding: 1rem 0;
+  width: 100%;
+}
+.shadow {
+  position: absolute;
+  top: 0;
+}
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.6rem 3rem 1.6rem;
+}
+section:nth-child(2) {
+  margin-top: 16px;
+}
+.title {
+  font-size: 2rem;
+  margin-top: 8.5rem;
+}
+@media (min-width: 500px) {
+  .image {
+    left: 21%;
+    max-height: 260px;
+    position: fixed;
+    top: 2%;
+    width: 60%;
+  }
+  .shadow {
+    max-height: 180px;
+    position: fixed;
+    top: 15%;
+  }
+}
+@media (min-width: 900px) {
+  .mobile {
+    display: none;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    padding: 8.4rem 1.5rem 3rem 3.3rem;
+  }
+  main {
+    display: flex;
+    max-height: 510px;
+    width: 930px;
+  }
+  .img-container {
+    background-image: url(../challenges/downloads/faq-accordion-card-main/images/bg-pattern-desktop.svg);
+    background-position: 117% 71%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  .hidden,
+  .box {
+    display: block;
+  }
+  .hidden {
+    position: relative;
+    right: 18%;
+    top: 12%;
+  }
+  .box {
+    bottom: 26%;
+    left: -10%;
+    position: absolute;
+  }
+  section {
+    padding: 0 0 1rem 0.5rem;
+    width: 37%;
+  }
+  .title {
+    margin: 2.5rem 0 2rem 0;
+    text-align: left;
+    width: 100%;
+  }
+  .question {
+    font-size: 0.9rem;
+  }
+  .answer {
+    font-size: 0.7rem;
+    letter-spacing: 0.4px;
+  }
+}

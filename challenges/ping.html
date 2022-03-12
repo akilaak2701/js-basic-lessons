@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../themes/ping.css" />
+    <script src="../script/ping.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../challenges/downloads/ping-coming-soon-page-master/ping-coming-soon-page-master/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <main class="container">
+      <img
+        src="../challenges/downloads/ping-coming-soon-page-master/ping-coming-soon-page-master/images/logo.svg"
+        alt="logo"
+        class="logo"
+      />
+      <h1 class="title">
+        We are launching <span class="darkbluetext">soon!</span>
+      </h1>
+      <h4 class="subtitle">Subscribe and get notified</h4>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Your email address..."
+      />
+      <button id="submitButton" onclick="EmailValidation()">Notify Me</button>
+      <p id="errorMessage"></p>
+      <img
+        src="../challenges/downloads/ping-coming-soon-page-master/ping-coming-soon-page-master/images/illustration-dashboard.png"
+        alt="dashboard"
+        class="dashboard"
+      />
+      <section class="socials">
+        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+      </section>
+    </main>
+    <footer>
+      <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/akilaak2701">AKILA SRI</a>.
+      </p>
+    </footer>
+  </body>
+</html>
