@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>callback-func</title>
+  </head>
+  <body>
+    <button class="clickMe">clickMe!</button>
+    <p>
+      <input type="button" value="stop" onclick="stopInterval()" />
+    </p>
+    <script>
+      const button = document.querySelector(".clickMe");
+      function handleClick() {
+        console.log("Great Clicking!!");
+      }
+      //   registeration
+      button.addEventListener("click", handleClick);
+      const hander1 = function () {
+        console.log("Nice Job!!");
+      };
+      button.addEventListener("click", hander1);
+      const handler2 = () => {
+        console.log("DONE! Time to eat!");
+      };
+      setTimeout(handler2, 3000); // 3 sec or 3000 miilisec
+      //the func will be called after the time out period
+      var interval = setInterval(handler2, 2000);
+      function stopInterval() {
+        clearInterval(interval);
+        console.log("stopped!!");
+      }
+      //   setTimeout(clearTimeout(interval), 10000);
+    </script>
+  </body>
+</html>
