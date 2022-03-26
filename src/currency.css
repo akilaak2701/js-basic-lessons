@@ -1,32 +1,8 @@
 body {
-  background-color: gray;
+  background-color: rgb(220, 245, 220);
 }
 h1 {
   margin: auto;
-}
-input {
-  background-color: yellow;
-  appearance: none;
-  border: none;
-  background: transparent;
-  outline: none;
-  text-align: center;
-}
-select {
-  border: none;
-  background: transparent;
-  outline: none;
-  background-color: yellow;
-  appearance: none;
-  text-align: center;
-  font-weight: bold;
-}
-th,
-td {
-  appearance: none;
-  background-color: yellow;
-  font-weight: 900;
-  padding: 30px;
 }
 table {
   background-color: white;
@@ -38,4 +14,29 @@ table {
   table-layout: fixed;
   text-align: center;
   width: 500px;
+}
+th,
+td {
+  appearance: none;
+  background-color: rgb(197, 162, 5);
+  font-weight: 900;
+  padding: 30px;
+}
+
+input {
+  background-color: rgb(190, 173, 95);
+  appearance: none;
+  border: none;
+  background: transparent;
+  outline: none;
+  text-align: center;
+}
+select {
+  border: none;
+  background: transparent;
+  outline: none;
+  background-color: rgb(197, 162, 5);
+  appearance: none;
+  text-align: center;
+  font-weight: bold;
 }
