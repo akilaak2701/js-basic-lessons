@@ -35,13 +35,13 @@ function createGreeting (greeting = '') {
   }
 }
 const greet = createGreeting('Hello')
-console.log(greet('mathuri'))
+console.log(greet('AKILA'))
 
 const sayHello = createGreeting('hello')
 const sayVanakkam = createGreeting('vanakkam')
-console.log(sayHello('mathuri'))
+console.log(sayHello('AKILA'))
 console.log(sayVanakkam('Tamil'))
-console.log(sayVanakkam('mathuri'))
+console.log(sayVanakkam('AKILA'))
 
 function createGame (gameName) {
   let score = 0
@@ -50,7 +50,7 @@ function createGame (gameName) {
     return `Your name ${gameName} score is ${score}`
   }
 }
-const winner = createGame('mathuri')
+const winner = createGame('AKILA')
 console.log(winner('100'))
 
 const hockeyGame = createGame('Hockey')

@@ -1,17 +1,16 @@
 const inputEl = document.querySelector('#email')
 const btn = document.querySelector('#submit')
-const RegEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/
+const RegEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/ 
 const iconErrorEl = document.querySelector('.icon-error')
 const textErrorEl = document.querySelector('.text-error')
 // eslint-disable-next-line no-unused-vars
 const fromGroupEl = document.querySelector('.form-group')
 let errors = []
 
-btn.addEventListener('click', e => {
+btn.addEventListener('click', e => {  
   textErrorEl.classList.remove('text-success')
 
   errors = []
-  e.preventDefault()
   const email = inputEl.value
 
   // eslint-disable-next-line eqeqeq

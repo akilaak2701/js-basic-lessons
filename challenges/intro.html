@@ -12,75 +12,74 @@
     />
     <link rel="stylesheet" href="../themes/intro.css" />
 
-    <title>Frontend Mentor | Intro component with sign up form</title>
+    <title>Intro component with sign up form</title>
   </head>
+
   <body>
-    <main>
-      <div class="content">
-        <h1>Learn to code by watching others</h1>
+    <div class="container">
+      <div>
+        <h1>
+          Learn to code by
+          <br />
+          watching others
+        </h1>
         <p>
           See how experienced developers solve problems in real-time. Watching
           scripted tutorials is great, but understanding how developers think is
           invaluable.
         </p>
       </div>
-      <div class="signup">
-        <div class="signup__pricing">
-          <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+      <div>
+        <div class="box box-blue">
+          <p>
+            <strong>Try it free 7 days</strong>
+            then $20/mo. thereafter
+          </p>
         </div>
-        <form action="#" class="signup__form">
-          <input
-            type="text"
-            name="first-name"
-            id="first-name"
-            aria-label="First Name"
-            placeholder="First Name"
-            required
-          />
-          <input
-            type="text"
-            name="last-name"
-            id="last-name"
-            aria-label="Last Name"
-            placeholder="Last Name"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            aria-label="Email Address"
-            placeholder="Email Address"
-            required
-          />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            aria-label="Password"
-            placeholder="Password"
-            required
-          />
-          <input
-            type="submit"
-            value="Claim your free trial"
-            aria-label="Submit"
-          />
-          <span class="terms-notice"
-            >By clicking the button, you are agreeing to our
-            <span>Terms and Services</span></span
-          >
+
+        <form class="box" id="form">
+          <div class="form-control">
+            <input type="text" id="firstname" placeholder="First Name" />
+            <img
+              src="../challenges/downloads/intro-component-with-signup-form-master/intro-component-with-signup-form-master/images/icon-error.svg"
+              alt="error-icon"
+            />
+            <small></small>
+          </div>
+          <div class="form-control">
+            <input type="text" id="lastname" placeholder="Last Name" />
+            <img
+              src="../challenges/downloads/intro-component-with-signup-form-master/intro-component-with-signup-form-master/images/icon-error.svg"
+              alt="error-icon"
+            />
+            <small></small>
+          </div>
+          <div class="form-control">
+            <input type="email" id="email" placeholder="Email Address" />
+            <img
+              src="../challenges/downloads/intro-component-with-signup-form-master/intro-component-with-signup-form-master/images/icon-error.svg"
+              alt="error-icon"
+            />
+            <small></small>
+          </div>
+          <div class="form-control">
+            <input type="password" id="password" placeholder="Password" />
+            <img
+              src="../challenges/downloads/intro-component-with-signup-form-master/intro-component-with-signup-form-master/images/icon-error.svg"
+              alt="error-icon"
+            />
+            <small></small>
+          </div>
+          <button>Claim your free trial</button>
+          <small>
+            By clicking the button, you are agreeing to our
+            <a href="#">Terms and Services</a>
+          </small>
         </form>
       </div>
-    </main>
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/akilaak2701">AKILA SRI</a>.
-      </p>
-    </footer>
+    </div>
+    <footer></footer>
+
+    <script src="../script/intro.js"></script>
   </body>
-  <script src="../script/intro.js"></script>
 </html>

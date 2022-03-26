@@ -1,43 +1,54 @@
-/* eslint-disable camelcase */
-const inputs = document.querySelectorAll("input:not([type='submit'])")
+const form = document.getElementById('form');
 
-inputs.forEach(input => {
-  input.addEventListener('invalid', addErrorMessage)
-  input.addEventListener('blur', (event) => {
-    input.checkValidity()
-  })
+form.addEventListener('submit', e => {
+  e.preventDefault();
 
-  input.addEventListener('focus', removeErrorMessage)
-})
+  const firstName = form.firstname.value;
+  const lastName = form.lastname.value;
+  const email = form.email.value;
+  const password = form.password.value;
 
-function addErrorMessage (e) {
-  const name = e.target.getAttribute('name')
+  if (firstName === '') {
+    addErrorTo('firstname', 'First Name is required!');
+  } else {
+    removeErrorFrom('firstname');
+  }
 
-  const error_icon = document.createElement('span')
-  error_icon.setAttribute('data-id', name)
-  error_icon.classList.add('error-icon')
-  error_icon.innerHTML = "<img src='images/icon-error.svg' alt=''>"
+  if (lastName === '') {
+    addErrorTo('lastname', 'Last Name is required!');
+  } else {
+    removeErrorFrom('lastname');
+  }
 
-  const error_message = document.createElement('span')
-  error_message.setAttribute('data-id', name)
-  error_message.classList.add('error-message')
+  if (email === '') {
+    addErrorTo('email', 'Email is required!');
+  } else if (!isValid(email)) {
+    addErrorTo('email', 'Email is not valid!');
+  } else {
+    removeErrorFrom('email')
+  }
 
-  // eslint-disable-next-line eqeqeq
-  if (e.target.value == '' || e.target.value == null) error_message.innerHTML = '' + e.target.getAttribute('placeholder') + ' cannot be empty.'
-  else error_message.innerHTML = 'Looks like this is not an ' + e.target.getAttribute('placeholder') + '.'
+  if (password === '') {
+    addErrorTo('password', 'Password is required!');
+  } else {
+    removeErrorFrom('password');
+  }
+});
 
-  e.target.after(error_message)
-  e.target.after(error_icon)
+function addErrorTo (field, message) {
+  const formControl = form[field].parentNode;
+  formControl.classList.add('error');
 
-  e.target.classList.add('error')
+  const small = formControl.querySelector('small');
+  small.innerText = message
 }
 
-function removeErrorMessage (e) {
-  const elements = document.querySelectorAll("[data-id='" + e.target.getAttribute('name') + "']")
+function removeErrorFrom (field) {
+  const formControl = form[field].parentNode;
+  formControl.classList.remove('error');
+}
 
-  elements.forEach(error_element => {
-    error_element.remove()
-  })
-
-  e.target.classList.remove('error')
+function isValid (email) {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
 }

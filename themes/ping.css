@@ -1,32 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;800&display=swap");
-.attribution {
-  font-size: 11px;
-  text-align: center;
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+
 body {
   font-family: "Libre Franklin", sans-serif;
   height: 100vh;
   text-align: center;
-}
-.copyright {
-  color: hsl(0, 0%, 59%);
-  font-size: 12px;
 }
 .container {
   margin: auto;
   max-width: 650px;
   text-align: center;
 }
-.darkbluetext {
+.logo {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.title {
+  color: hsl(0, 0%, 59%);
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.subtitle {
   color: hsl(209, 33%, 12%);
   font-weight: 600;
-}
-.dashboard {
-  margin: 85px 65px;
-  max-width: 100%;
+  margin-bottom: 30px;
+  margin-top: 0px;
 }
 #email {
   border-radius: 25px;
@@ -41,16 +47,7 @@ body {
   margin-top: 7px;
   position: absolute;
 }
-.logo {
-  margin-bottom: 20px;
-  margin-top: 30px;
-}
-.subtitle {
-  color: hsl(209, 33%, 12%);
-  font-weight: 600;
-  margin-bottom: 30px;
-  margin-top: 0px;
-}
+
 #submitButton {
   -moz-box-shadow: 1px 2px 17px -4px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 2px 17px -4px rgba(0, 0, 0, 0.75);
@@ -84,9 +81,26 @@ body {
   background-color: hsl(223, 87%, 63%);
   color: white;
 }
-.title {
+
+.copyright {
   color: hsl(0, 0%, 59%);
-  font-size: 40px;
-  font-weight: 300;
-  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.darkbluetext {
+  color: hsl(209, 33%, 12%);
+  font-weight: 600;
+}
+.dashboard {
+  margin: 85px 65px;
+  max-width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

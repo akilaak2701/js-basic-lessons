@@ -1,0 +1,41 @@
+body {
+  background-color: gray;
+}
+h1 {
+  margin: auto;
+}
+table {
+  background-color: white;
+  box-shadow: 5px 5px 10px black;
+  height: 50px;
+  margin-top: 15%;
+  margin: auto;
+  padding: 10px;
+  table-layout: fixed;
+  text-align: center;
+  width: 500px;
+}
+th,
+td {
+  appearance: none;
+  background-color: rgb(255, 217, 0);
+  font-weight: 900;
+  padding: 30px;
+}
+input {
+  appearance: none;
+  background-color: rgb(255, 217, 0);
+  background: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+select {
+  appearance: none;
+  background-color: rgb(255, 217, 0);
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  outline: none;
+  text-align: center;
+}

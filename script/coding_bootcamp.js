@@ -8,7 +8,7 @@ function fn (event) {
     testinomialOne.classList.toggle('display-none')
     testinomialSecond.classList.toggle('display-none')
   }
-  if (event.keyCode === 37 || event.keyCode === 39) {
+  if (event.keyCode === 37 || event.keyCode === 39) { 
     testinomialOne.classList.toggle('display-none')
     testinomialSecond.classList.toggle('display-none')
   }
@@ -16,5 +16,3 @@ function fn (event) {
 
 btnSwitch.addEventListener('click', fn)
 btnSwitch2.addEventListener('click', fn)
-
-window.addEventListener('keydown', fn)

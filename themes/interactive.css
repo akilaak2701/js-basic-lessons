@@ -3,6 +3,14 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background-image: url("../challenges/downloads/interactive-pricing-component-main/images/bg-pattern.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  font-family: "Manrope", sans-serif;
+  justify-content: center;
+}
 aside {
   background-color: hsl(0, 0%, 100%);
   border-radius: 10px;
@@ -13,13 +21,7 @@ aside {
   min-width: 500px;
   padding: 50px 30px;
 }
-body {
-  background-image: url("../challenges/downloads/interactive-pricing-component-main/images/bg-pattern.svg");
-  background-repeat: no-repeat;
-  display: flex;
-  font-family: "Manrope", sans-serif;
-  justify-content: center;
-}
+
 .container {
   max-width: 1400px;
 }
@@ -63,7 +65,7 @@ header p {
   background-color: hsl(174, 77%, 80%);
   border-radius: 5px;
   height: 10px;
-  outline: none;
+  /* outline: none; */
 }
 .progress .monthly {
   display: flex;
@@ -118,9 +120,7 @@ label {
 .progress-bar input[type="range"] {
   width: 100%;
 }
-:root {
-  --main-color: hsl(227, 35%, 25%);
-}
+
 .start {
   display: flex;
   justify-content: space-between;

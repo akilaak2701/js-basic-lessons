@@ -1,3 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-gray-blue: hsl(217, 19%, 35%);
+  --desaturated-blue: hsl(214, 17%, 51%);
+  --gray-blue: hsl(212, 23%, 69%);
+  --light-gray-blue: hsl(210, 46%, 95%);
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  align-items: center;
+  background: var(--light-gray-blue);
+  display: flex;
+  font-family: "Manrope", sans-serif;
+  justify-content: center;
+  min-height: 100%;
+  padding: 0 2.4rem;
+}
+main {
+  border-radius: 1rem;
+  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+  max-width: 32.7rem;
+  overflow: hidden;
+}
+h2 {
+  color: var(--dark-gray-blue);
+  font-size: 1.6rem;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  padding-bottom: 1.3rem;
+}
+h3 {
+  color: var(--dark-gray-blue);
+}
+.image-container {
+  background: url(../challenges/downloads/article-preview-component-master/article-preview-component-master/images/drawers.jpg);
+  width: 100%;
+  background-size: cover;
+  height: 20rem;
+}
 .author {
   display: flex;
 }
@@ -21,41 +71,15 @@
   justify-content: center;
   margin-top: 0.5rem;
   width: 3.2rem;
-  z-index: 10;
 }
 .arrow:hover {
   background: var(--gray-blue);
 }
-.arrow:active {
-  transform: scale(0.98);
-}
-.arrow:hover img {
-  filter: brightness(100);
-  transition: none;
-}
-.attribution {
-  bottom: 0;
-  font-size: 11px;
-  position: fixed;
-  text-align: center;
-  width: 100%;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+
 a img:hover {
   transform: scale(1.2);
 }
-body {
-  align-items: center;
-  background: var(--light-gray-blue);
-  display: flex;
-  flex-direction: column;
-  font-family: "Manrope", sans-serif;
-  justify-content: center;
-  min-height: 100%;
-  padding: 0 2.4rem;
-}
+
 .copy {
   background: #ffff;
   padding: 4.2rem 3.2rem 2.2rem;
@@ -66,57 +90,16 @@ body {
   letter-spacing: 0.7px;
   line-height: 1.6;
 }
-footer {
-  align-items: center;
-  background: #ffff;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 3.2rem 2rem;
-  position: relative;
-}
-h2 {
-  color: var(--dark-gray-blue);
-  font-size: 1.6rem;
-  letter-spacing: 0.3px;
-  line-height: 1.5;
-  padding-bottom: 1.3rem;
-}
-h3 {
-  color: var(--dark-gray-blue);
-}
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  height: 100%;
-}
-.image-container {
-  background: url(../challenges/downloads/article-preview-component-master/article-preview-component-master/images/drawers.jpg);
-  width: 100%;
-  background-size: cover;
-  height: 20rem;
-}
+
 li {
   padding-right: 1.5rem;
 }
-main {
-  border-radius: 1rem;
-  box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
-  max-width: 32.7rem;
-  overflow: hidden;
+ul {
+  align-items: center;
+  display: flex;
+  list-style: none;
 }
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
-:root {
-  --dark-gray-blue: hsl(217, 19%, 35%);
-  --desaturated-blue: hsl(214, 17%, 51%);
-  --gray-blue: hsl(212, 23%, 69%);
-  --light-gray-blue: hsl(210, 46%, 95%);
-}
+
 .share {
   align-items: center;
   background: var(--dark-gray-blue);
@@ -148,20 +131,33 @@ time {
   color: var(--gray-blue);
   font-size: 1.2rem;
 }
-ul {
+
+footer {
   align-items: center;
+  background: #ffff;
   display: flex;
-  list-style: none;
+  justify-content: space-between;
+  padding: 1rem 3.2rem 2rem;
+  position: relative;
 }
+.attribution {
+  bottom: 0;
+  font-size: 11px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 @media screen and (min-width: 875px) {
   share::after {
     background-color: #48556a;
     bottom: -0.8rem;
-    content: "";
     height: 1.6rem;
     left: 50%;
     position: absolute;
-    transform: rotate(45deg);
     width: 1.6rem;
   }
 

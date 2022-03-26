@@ -3,7 +3,6 @@ function EmailValidation (mail) {
   const emailAddress = document.getElementById('email').value
   // eslint-disable-next-line no-useless-escape
   const validEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
-  console.log(emailAddress)
   // eslint-disable-next-line eqeqeq
   if (emailAddress == '') {
     document.getElementById('errorMessage').innerHTML = 'Whoops! It looks like you forgot to add your email'

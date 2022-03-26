@@ -1,185 +1,195 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700&display=swap");
+
+* {
+  box-sizing: border-box;
 }
-.attribution a {
-  color: #3e52a3;
-}
+
 body {
-  background-color: #f6f6fe;
-  background-image: url("../challenges/downloads/pricing-component-with-toggle-master/pricing-component-with-toggle-master/images/bg-top.svg");
-  background-position-x: right;
-  background-position-y: 0%;
-  background-repeat: no-repeat;
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  margin: 0 auto;
-}
-body {
-  background-image: url("../challenges/downloads/pricing-component-with-toggle-master/pricing-component-with-toggle-master/images/bg-top.svg"),
-    url("../challenges/downloads/pricing-component-with-toggle-master/pricing-component-with-toggle-master/images/bg-bottom.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-position-x: right, left;
-  background-position-y: 0%, bottom;
-}
-.card {
-  border-radius: 10px;
-  min-width: 300px;
-}
-.card--professional .card__title {
-  margin-top: 30px;
-}
-.card--professional .card__button {
-  margin-bottom: 30px;
-}
-.card {
-  border-radius: 5px;
-  font-weight: 700;
-  margin-bottom: 35px;
-  min-width: 260px;
-  padding: 35px 30px;
-  text-align: center;
-}
-.card--light {
-  background-color: #fff;
-}
-.card--professional {
-  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
-  color: #fff;
-}
-.card--professional .card__title,
-.card--professional .card__amount,
-.card--professional .card__features {
-  color: #fff;
-}
-.card--professional .card__button {
-  background: #fff;
-  color: #696fdd;
-}
-.card__title {
-  color: #6d708d;
-  font-size: 1.1rem;
-  margin-bottom: 32px;
-}
-.card__amount {
-  color: #494c5f;
-  font-size: 4.1rem;
-  margin-bottom: 25px;
-}
-.card__amount::first-letter {
-  font-size: 60%;
-  vertical-align: middle;
-}
-.card__amount--hidden {
-  display: none;
-}
-.card__features {
-  color: #6d708d;
-  margin-bottom: 35px;
-}
-.card__features li {
-  border-top: #dbddf0 solid 1px;
-  padding: 15px;
-}
-.card__features li:last-child {
-  border-bottom: #dbddf0 solid 1px;
-}
-.card__button {
-  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  display: block;
-  font-size: 0.75rem;
-  letter-spacing: 0.08rem;
-  padding: 18px;
-  text-transform: uppercase;
-}
-h1 {
-  font-size: 2rem;
-}
-h1,
-h2,
-h3 {
-  font-weight: 700;
-}
-header {
-  color: #6d708d;
-  margin: 65px 0 55px 0;
-  text-align: center;
-}
-main {
   align-items: center;
+  background-color: hsl(240, 78%, 98%);
+  color: hsl(232, 13%, 33%);
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding: 0 25px;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  text-align: center;
 }
-.toggle-switch {
+
+body::before {
+  content: "";
+  background-image: url("../challenges/downloads/pricing-component-with-toggle-master/pricing-component-with-toggle-master/images/bg-top.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+body::after {
+  background-image: url("../challenges/downloads/pricing-component-with-toggle-master/pricing-component-with-toggle-master/images/bg-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.container {
+  margin: auto;
+  max-width: 100%;
+  width: 1200px;
+}
+
+.flex {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-top: 25px;
 }
-.toggle-switch__label {
-  color: #b3b5c6;
-  display: inline-block;
-  font-size: 0.95rem;
-}
-.toggle-switch__toggle {
-  display: inline-block;
-  height: 28px;
-  margin: 0 20px;
-  position: relative;
-  width: 50px;
-}
-.toggle-switch__toggle input {
-  height: 0;
-  opacity: 0;
-  width: 0;
-}
-.toggle-switch__toggle input:checked + .toggle-switch__slider {
-  background-color: #696fdd;
-}
-.toggle-switch__toggle input:checked + .toggle-switch__slider:before {
-  -ms-transform: translateX(22px);
-  -webkit-transform: translateX(22px);
-  transform: translateX(22px);
-}
-.toggle-switch__slider {
-  -webkit-transition: 0.4s;
-  background-color: #ccc;
-  border-radius: 34px;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 0.4s;
-}
-.toggle-switch__slider:before {
-  -webkit-transition: 0.4s;
-  background-color: white;
-  border-radius: 50%;
-  bottom: 3px;
-  content: "";
-  height: 22px;
-  left: 3px;
-  position: absolute;
-  transition: 0.4s;
-  width: 22px;
-}
-@media (min-width: 1024px) {
-  main {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
 
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .card {
-      min-width: 400px;
-    }
-  }
+h1 {
+  color: hsl(233, 13%, 49%);
+}
+
+.toggle-container {
+  color: hsl(234, 14%, 74%);
+  margin-bottom: 40px;
+}
+
+.price-box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 7px black;
+  color: hsl(233, 13%, 49%);
+  padding: 30px;
+  margin: 10px;
+}
+
+.price-box.price-box-premium {
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  color: #fff;
+
+  transform: scale(1.15);
+}
+
+.price-box h4 {
+  margin: 0;
+}
+
+.price-box p {
+  color: hsl(232, 13%, 33%);
+  font-size: 3.5em;
+  margin: 15px 0;
+  width: 250px;
+}
+
+.price-box .monthly {
+  display: none;
+}
+
+.show-monthly .price-box .monthly {
+  display: block;
+}
+
+.show-monthly .price-box .annually {
+  display: none;
+}
+
+.price-box ul {
+  border-top: 1px solid hsl(234, 14%, 74%);
+  padding: 0;
+  list-style-type: none;
+}
+
+.price-box ul li {
+  border-bottom: 1px solid hsl(234, 14%, 74%);
+  font-size: 14px;
+  padding: 15px 0;
+}
+
+.price-box button {
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  padding: 15px;
+  margin-top: 10px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.price-box.price-box-premium button {
+  background-image: none;
+  background-color: #fff;
+  color: hsl(237, 63%, 64%);
+}
+
+.price-box.price-box-premium ul,
+.price-box.price-box-premium ul li {
+  border-color: white;
+}
+.price-box.price-box-premium p {
+  color: #fff;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-container label {
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+  height: 30px;
+  width: 60px;
+}
+
+.toggle-container label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  height: 25px;
+  width: 25px;
+  transition: transform 0.4s ease;
+}
+
+.toggle-container input {
+  position: absolute;
+  left: -9999px;
+}
+
+.toggle-container input:checked + label .ball {
+  transform: translateX(30px);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
 }

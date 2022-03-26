@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+  ---white: hsl(0, 0%, 100%);
+  ---Light-Grey: hsl(217, 12%, 63%);
+  ---Medium-Grey: hsl(216, 12%, 54%);
+  ---Dark-Blue: hsl(213, 19%, 18%);
+  ---Very-Dark-Blue: hsl(216, 12%, 8%);
+  ---Orange: hsl(25, 97%, 53%);
+}
+main {
+  width: auto;
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(---Very-Dark-Blue);
+}
+.container {
+  background-color: var(---Dark-Blue);
+  color: white;
+  width: 20%;
+  height: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin: auto;
+  border-radius: 10%;
+  /* flex-direction: column; */
+}
+.star {
+  border-radius: 50%;
+  width: 10%;
+  height: 10%;
+  margin: 0%;
+  border-radius: 40%;
+  background-color: var(---Light-Grey);
+}
+.thanku {
+  /* background-color: var(---Dark-Blue); */
+  display: none;
+}
+.final {
+  display: none;
+}
+.rated {
+  display: none;
+}
+.button {
+  /* background-color: white; */
+  color: orange;
+}
+.rating {
+  flex-direction: row;
+  display: flex;
+  border-radius: 100%;
+}
+.r1 {
+  padding-right: 15%;
+  /* border-radius: 40%; */
+  background-color: var(---Light-Grey);
+}
+.r2 {
+  padding-right: 15%;
+}
+.r3 {
+  padding-right: 15%;
+}
+.r4 {
+  padding-right: 15%;
+}
+.r5 {
+  padding-right: 15%;
+}
+

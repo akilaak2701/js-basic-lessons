@@ -1,158 +1,168 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-*,
-* *,
-*::after,
-*::before {
+* {
   box-sizing: border-box;
 }
+
 body {
-  background: url("../challenges/downloads/intro-component-with-signup-form-master/intro-component-with-signup-form-master/images/bg-intro-mobile.png")
-    #ff7a7a;
-  background-position: center;
-  background-repeat: repeat;
-  font-size: 1em;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("../challenges/downloads/intro-component-with-signup-form-master/intro-component-with-signup-form-master/images/bg-intro-desktop.png");
+  color: #fff;
   font-family: "Poppins", sans-serif;
 }
-.content {
-  color: white;
-  padding: 1em;
-  text-align: center;
-}
-.content h1 {
-  line-height: 1.25em;
-}
-footer {
-  color: white;
-  font-size: smaller;
-  text-align: center;
-}
-footer a {
-  color: inherit;
-}
-input[type="submit"] {
-  background-color: #38cc8c;
-  border-radius: 4px;
-  border: none;
-  box-shadow: 0px 0.3em 0px 0px #2fb179;
-  color: white;
-  cursor: pointer;
-  font-weight: lighter;
-  letter-spacing: 1px;
-  padding-top: 6px;
-  text-transform: uppercase;
-}
-input[type="submit"]:hover {
-  background-color: #44e49f;
-  box-shadow: 0px 0.3em 0px 0px #38cc8c;
-}
-main {
-  align-items: center;
+
+.container {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  align-items: center;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: min(100vw, 600px);
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
   min-height: 100vh;
 }
-.signup {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 1.5em;
-  padding: 1em;
+
+.container > div {
+  flex: 1;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+p {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  margin-bottom: 20px;
   text-align: center;
 }
-.signup__pricing,
-.signup__form {
-  border-radius: 8px;
+
+.box p {
+  margin: 0;
 }
-.signup__pricing {
-  background-color: #6055a5;
-  box-shadow: 0px 0.45em 0px 0px #df6d6d;
-  color: white;
-  font-size: 0.8em;
-  padding: 0.5em;
-  text-align: inherit;
+
+.box-blue {
+  background-color: hsl(248, 32%, 49%);
+  padding: 20px;
 }
-.signup__form {
-  background-color: white;
-  box-shadow: 0px 0.45em 0px 0px #df6d6d;
-  padding: 1.5em;
+
+.form-control {
   position: relative;
+  margin-bottom: 30px;
 }
-.signup__form input {
-  font-family: inherit;
-  font-weight: bolder;
-  height: 3em;
-  margin-top: 0.9em;
-  padding: 0 1em;
-  width: 100%;
-}
-.signup__form input:not([type="submit"]) {
-  border-radius: 4px;
-  border: 1px solid #e4e2e2;
-}
-.signup__form input + span.error-icon {
-  padding-top: 1.25em;
+
+.form-control small {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
   position: absolute;
-  right: 2.5em;
-}
-.signup__form input + span.error-icon img {
-  height: 1em;
-  width: 1em;
-}
-.signup__form input ~ span.error-message {
-  color: #ff7a7a;
-  display: block;
-  font-size: 0.65em;
-  font-style: italic;
-  font-weight: 500;
-  padding-top: 0;
-  position: relative;
+  bottom: -24px;
+  right: 0;
+  opacity: 0;
   text-align: right;
+}
+
+input {
+  border-radius: 5px;
+  border: 1.3px solid hsl(246, 25%, 77%);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 25px;
+  display: block;
   width: 100%;
 }
-.signup__form input.error {
-  border: 2px solid #ff7a7a;
+
+.form-control.error input {
+  border-color: hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
 }
-.terms-notice {
-  color: #b9b6d3;
+
+.form-control.error input::placeholder {
+  color: hsl(0, 100%, 74%);
+}
+
+input:focus {
+  border: 1.3px solid hsl(248, 32%, 49%);
+  outline: none;
+}
+
+.form-control img {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  /* transform: translateY(-50%); */
+  height: 20px;
+}
+
+.form-control.error img {
+  opacity: 1;
+}
+
+button {
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 5px;
+  border: 1px solid hsl(154, 59%, 45%);
+  box-shadow: 0 2px hsl(154, 59%, 45%);
+  color: #fff;
+  cursor: pointer;
   display: block;
-  font-size: 0.75em;
-  margin-top: 1em;
-  padding: 0.5em;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 100%;
 }
-.terms-notice span {
-  color: #ff7a7a;
-  font-weight: bolder;
+
+button:focus {
+  outline: none;
 }
-@media (min-width: 768px) {
-  body {
-    background-position: center;
-    background-repeat: repeat;
-    background: url("../challenges/downloads/intro-component-with-signup-form-master/intro-component-with-signup-form-master/images/bg-intro-desktop.png"),
-      #ff7a7a;
-  }
+
+button:active {
+  box-shadow: 0 0 hsl(154, 59%, 45%);
+  transform: translateY(2px);
 }
-@media (min-width: 768px) {
-  main {
-    flex-direction: row;
-    gap: 1em;
-    max-width: min(90vw, 1000px);
-  }
-  main > * {
-    width: 50%;
-  }
+
+.form-control small {
+  opacity: 0;
 }
-@media (min-width: 768px) {
-  .content {
-    font-size: 0.9em;
-    padding: 1.5em;
-    text-align: left;
+
+.form-control.error small {
+  opacity: 1;
+}
+
+small {
+  display: block;
+  color: #bbb;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+small a {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    text-align: center;
   }
-  .content h1 {
-    font-size: 2.5em;
+
+  p {
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
   }
 }
