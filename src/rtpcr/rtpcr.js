@@ -6,8 +6,8 @@ addData.addEventListener("click",function() {
 move();
 myFunction();
 });
-function reset() {
-myFunction();
-}
-window.reset = reset;
+// function reset() {
+// myFunction();
+// }
+// window.reset = reset;
 
