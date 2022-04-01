@@ -38,7 +38,7 @@ label {
   padding: 3px;
   width: 300px;
 } */
- .buttons btn {
+ .buttons button {
    margin: 20px;
   background-color: red; 
   background-color: red;
@@ -51,7 +51,7 @@ label {
   margin: 4px 2px;
   cursor: pointer;
 } 
-/* .submit {
+#submit {
   background-color: red;
   border: none;
   color: white;
@@ -61,7 +61,7 @@ label {
   font-size: 14px;
   margin: 4px 2px;
   cursor: pointer;
-} */
+} 
 #table,
 #table1 {
   border: 1px solid black;
