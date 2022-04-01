@@ -39,7 +39,7 @@ label {
   width: 300px;
 } */
  .buttons button {
-   margin: 20px;
+   /* margin: 20px; */
   /* background-color: r;  */
   background-color:rgb(171, 16, 243);
   border: none;
@@ -51,6 +51,13 @@ label {
   margin: 4px 2px;
   cursor: pointer;
 } 
+.buttons:hover {
+  background-color: rgb(191, 103, 226);
+}
+
+.buttons:active {
+  background-color: rgb(191, 103, 226);
+}
 #submit {
   background-color: rgb(171, 16, 243);
   border: none;
@@ -62,6 +69,12 @@ label {
   margin: 4px 2px;
   cursor: pointer;
 } 
+#submit:hover{
+  background-color: rgb(191, 103, 226);
+}
+#submit:active{
+  background-color: rgb(191, 103, 226);
+}
 #table,
 #table1 {
   border: 1px solid black;
@@ -107,7 +120,7 @@ input[type="number"] {
   margin: 4px 2px;
   cursor: pointer;
 }  */
-.btn {
+/* .btn {
   background-color: rgb(51, 2, 116);
   border: none;
   color: white;
@@ -117,14 +130,8 @@ input[type="number"] {
   font-size: 14px;
   margin: 4px 2px;
   cursor: pointer;
-}
-.btn:hover {
-  background-color: rgb(191, 103, 226);
-}
+} */
 
-.btn:active {
-  background-color: rgb(191, 103, 226);
-}
 /* .img {
   background-image: url(../src/images/0016F253_header-schaeffler-story-corona-pandemie-virus.jpg);
   /* background-repeat: no-repeat; 

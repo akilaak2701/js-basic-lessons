@@ -4,7 +4,7 @@ export function myFunction() {
     table = document.getElementById("table");
     tr = table.getElementsByTagName("tr");
     if (tr.length === 1) {
-      document.getElementById("msg").innerHTML = "there is no record found";
+      document.getElementById("msg").innerHTML = " No Record Found";
     } else {
       for (i = 1; i < tr.length; i++) {
         if (table.rows[i].cells[4].innerHTML === input) {
