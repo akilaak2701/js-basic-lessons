@@ -66,7 +66,7 @@
         </div>
 
         <div class="buttons">
-          <button onclick="move()" class="btn">Add</button>
+          <button class="btn" id="btn">Add</button>
           <div id="msg"></div>
         </div>
       </div>
@@ -90,14 +90,9 @@
       </div>
       <br /><br />
       <div class="search">
-        <input
-          type="number"
-          id="find"
-          onkeyup="reset()"
-          placeholder="Enter name to search"
-        />
+        <input type="number" id="find" placeholder="Enter name to search" />
         <!-- <div class="buttons2"> -->
-        <input type="submit" class="btn" onclick="myFunction()" />
+        <input type="submit" class="btn" id="submit" />
         <!-- </div> -->
         <div id="msg"></div>
       </div>

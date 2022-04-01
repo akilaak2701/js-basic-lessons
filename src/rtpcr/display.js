@@ -1,6 +1,6 @@
  
 export function move() {
-    var store = [];
+    // var store = [];
     
       if (!checkEmptyInput()) {
         document.getElementById("msg").style.display = "none";
@@ -54,44 +54,52 @@ export function move() {
         cell11.innerHTML = store_obj["result"];
       }
     }
-    export function myFunction() {
-      var input, i, j;
-      input = document.getElementById("find").value;
-      table = document.getElementById("table");
-      tr = table.getElementsByTagName("tr");
-      table1 = document.getElementById("table1");
-      tr1 = table.getElementsByTagName("tr");
-      console.log(tr.length);
-      if (tr.length === 1) {
-        document.getElementById("msg").innerHTML = "there is no record found";
-      } else {
-        for (i = 1; i < tr.length; i++) {
-          console.log(table.rows[i].cells[4].innerHTML);
-          if (table.rows[i].cells[4].innerHTML === input) {
-            var newRow1 = table1.insertRow(table1.length),
-              cell1 = newRow1.insertCell(0),
-              cell2 = newRow1.insertCell(1),
-              cell3 = newRow1.insertCell(2),
-              cell4 = newRow1.insertCell(3),
-              cell5 = newRow1.insertCell(4),
-              cell6 = newRow1.insertCell(5),
-              cell7 = newRow1.insertCell(6),
-              cell8 = newRow1.insertCell(7),
-              cell9 = newRow1.insertCell(8),
-              cell10 = newRow1.insertCell(9),
-              cell11 = newRow1.insertCell(10);
-            cell1.innerHTML = table.rows[i].cells[0].innerHTML;
-            cell2.innerHTML = table.rows[i].cells[1].innerHTML;
-            cell3.innerHTML = table.rows[i].cells[2].innerHTML;
-            cell4.innerHTML = table.rows[i].cells[3].innerHTML;
-            cell5.innerHTML = table.rows[i].cells[4].innerHTML;
-            cell6.innerHTML = table.rows[i].cells[5].innerHTML;
-            cell7.innerHTML = table.rows[i].cells[6].innerHTML;
-            cell8.innerHTML = table.rows[i].cells[7].innerHTML;
-            cell9.innerHTML = table.rows[i].cells[8].innerHTML;
-            cell10.innerHTML = table.rows[i].cells[9].innerHTML;
-            cell11.innerHTML = table.rows[i].cells[10].innerHTML;
-          }
-        }
+    export function checkEmptyInput() {
+      var isEmpty = false,
+        fname = document.getElementById("fname").value,
+        lname = document.getElementById("lname").value,
+        dob = document.getElementById("dob").value,
+        gender = document.getElementById("gender").value,
+        aadhar = document.getElementById("aadhar").value,
+        city = document.getElementById("city").value,
+        date = document.getElementById("date").value,
+        time = document.getElementById("time").value,
+        lab = document.getElementById("lab").value,
+        report = document.getElementById("report").value,
+        result = document.getElementById("result").value;
+      if (fname === "") {
+        alert("First Name Connot Be Empty");
+        isEmpty = true;
+      } else if (lname === "") {
+        alert("Last Name Connot Be Empty");
+        isEmpty = true;
+      } else if (dob === "") {
+        alert("date of birth Connot Be Empty");
+        isEmpty = true;
+      } else if (gender === "") {
+        alert("Gender Connot Be Empty");
+        isEmpty = true;
+      }else if (date === ""){
+         alert("Date cannot be empty");
+      } 
+      else if (city === "") {
+        alert("City Connot Be Empty");
+        isEmpty = true;
+      } else if (time === "") {
+        alert("Time Connot Be Empty");
+        isEmpty = true;
+      } else if (lab === "") {
+        alert("Lab Connot Be Empty");
+        isEmpty = true;
+      } else if (report === "") {
+        alert("Report Connot Be Empty");
+        isEmpty = true;
+      } else if (result === "") {
+        alert("Result Connot Be Empty");
+        isEmpty = true;
+      } else if (aadhar === "") {
+        alert("Aadhar Connot Be Empty");
+        isEmpty = true;
       }
+      return isEmpty;
     }
