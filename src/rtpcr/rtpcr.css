@@ -51,13 +51,13 @@ label {
   margin: 4px 2px;
   cursor: pointer;
 } 
-.buttons:hover {
+/* .buttons:hover {
   background-color: rgb(191, 103, 226);
 }
 
 .buttons:active {
   background-color: rgb(191, 103, 226);
-}
+} */
 #submit {
   background-color: rgb(171, 16, 243);
   border: none;
@@ -69,12 +69,12 @@ label {
   margin: 4px 2px;
   cursor: pointer;
 } 
-#submit:hover{
+/* #submit:hover{
   background-color: rgb(191, 103, 226);
 }
 #submit:active{
   background-color: rgb(191, 103, 226);
-}
+} */
 #table,
 #table1 {
   border: 1px solid black;
