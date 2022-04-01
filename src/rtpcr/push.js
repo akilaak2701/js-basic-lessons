@@ -1,4 +1,5 @@
-export function push(ele){
-    var store=[];
+export function push(ele) {
+    var store = [];
     return store.push(ele);
-}
+  }
+
