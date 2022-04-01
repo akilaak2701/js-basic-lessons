@@ -1,6 +1,5 @@
  
 export function move() {
-    // var store = [];
     
       if (!checkEmptyInput()) {
         document.getElementById("msg").style.display = "none";
@@ -28,7 +27,6 @@ export function move() {
           report: report,
           result: result,
         };
-        store.push(store_obj);
         var newRow = table.insertRow(table.length),
           cell1 = newRow.insertCell(0),
           cell2 = newRow.insertCell(1),
