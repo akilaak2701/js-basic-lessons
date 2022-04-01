@@ -1,0 +1,13 @@
+<div>
+  <label for="city" class="form-label">{{ labelValue }}</label>
+  <div class="input-group mb-3">
+    <input
+      placeholder="enter city"
+      type="text"
+      name="city"
+      (change)="onchange($event)"
+    />
+  </div>
+</div>
+<div>Data modified:{{ data }}</div>
+<hr />
