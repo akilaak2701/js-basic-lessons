@@ -40,8 +40,8 @@ label {
 } */
  .buttons button {
    margin: 20px;
-  background-color: red; 
-  background-color: red;
+  /* background-color: r;  */
+  background-color:rgb(171, 16, 243);
   border: none;
   color: white;
   padding: 15px 32px;
@@ -52,7 +52,7 @@ label {
   cursor: pointer;
 } 
 #submit {
-  background-color: red;
+  background-color: rgb(171, 16, 243);
   border: none;
   color: white;
   padding: 15px 32px;
