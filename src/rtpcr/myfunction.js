@@ -7,7 +7,7 @@ export function myFunction() {
       document.getElementById("msg").innerHTML = "there is no record found";
     } else {
       for (i = 1; i < tr.length; i++) {
-        if (table.rows[i].cells[10].innerHTML === input) {
+        if (table.rows[i].cells[4].innerHTML === input) {
           var newRow1 = table1.insertRow(table1.length),
             cell1 = newRow1.insertCell(0),
             cell2 = newRow1.insertCell(1),

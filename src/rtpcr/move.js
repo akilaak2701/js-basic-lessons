@@ -5,13 +5,13 @@ export function move() {
       lname = document.getElementById("lname").value,
       dob = document.getElementById("dob").value,
       gender = document.getElementById("gender").value,
+      aadhar = document.getElementById("aadhar").value,
       city = document.getElementById("city").value,
       date = document.getElementById("date").value,
       time = document.getElementById("time").value,
       lab = document.getElementById("lab").value,
       report = document.getElementById("report").value,
-      result = document.getElementById("result").value,
-      aadhar = document.getElementById("aadhar").value;
+      result = document.getElementById("result").value;
     let store_obj = {
       firstname: fname,
       lastname: lname,
@@ -41,25 +41,25 @@ export function move() {
     cell2.innerHTML = store_obj["lastname"];
     cell3.innerHTML = store_obj["date of birth"];
     cell4.innerHTML = store_obj["gender"];
-    cell5.innerHTML = store_obj["city"];
-    cell6.innerHTML = store_obj["date"];
-    cell7.innerHTML = store_obj["time"];
-    cell8.innerHTML = store_obj["lab"];
-    cell9.innerHTML = store_obj["report"];
-    cell10.innerHTML = store_obj["result"];
-    cell11.innerHTML = store_obj["aadhar"];
+    cell5.innerHTML = store_obj["aadhar"];
+    cell6.innerHTML = store_obj["city"];
+    cell7.innerHTML = store_obj["date"];
+    cell8.innerHTML = store_obj["time"];
+    cell9.innerHTML = store_obj["lab"];
+    cell10.innerHTML = store_obj["report"];
+    cell11.innerHTML = store_obj["result"];
   }
   document.getElementById("fname").value = "";
   document.getElementById("lname").value = "";
   document.getElementById("dob").value = "";
   document.getElementById("gender").value = "";
+  document.getElementById("aadhar").value = "";
   document.getElementById("city").value = "";
   document.getElementById("date").value = "";
   document.getElementById("time").value = "";
   document.getElementById("lab").value = "";
   document.getElementById("report").value = "";
   document.getElementById("result").value = "";
-  document.getElementById("aadhar").value = "";
 }
 export function checkEmptyInput() {
   var isEmpty = false,
@@ -67,12 +67,12 @@ export function checkEmptyInput() {
     lname = document.getElementById("lname").value,
     dob = document.getElementById("dob").value,
     gender = document.getElementById("gender").value,
+    aadhar = document.getElementById("aadhar").value,
     city = document.getElementById("city").value,
     time = document.getElementById("time").value,
     lab = document.getElementById("lab").value,
     report = document.getElementById("report").value,
-    result = document.getElementById("result").value,
-    aadhar = document.getElementById("aadhar").value;
+    result = document.getElementById("result").value;
   if (fname === "") {
     alert("First Name Connot Be Empty");
     isEmpty = true;
