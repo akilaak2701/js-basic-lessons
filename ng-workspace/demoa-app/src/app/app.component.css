@@ -1,0 +1,151 @@
+.tab {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+  h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+  body {
+    /* background-color: rgb(180, 175, 175); */
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+  }
+  .heading{
+    text-align: center;
+  }
+  .container {
+    text-align: center;
+    /* outline-color: red; */
+    /* margin-left: 40%; */
+  }
+  
+  .buttons {
+    margin: 10px;
+    /* background-color: red; */
+  }
+  label {
+    font-weight: bolder;
+  }
+  .field {
+    align-self: center;
+  }
+  /* border: 1px solid black; 
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    padding: 3px;
+    width: 300px;
+  } */
+   .buttons button {
+     /* margin: 20px; */
+    /* background-color: r;  */
+    background-color:rgb(171, 16, 243);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+  } 
+  /* .buttons:hover {
+    background-color: rgb(191, 103, 226);
+  }
+  
+  .buttons:active {
+    background-color: rgb(191, 103, 226);
+  } */
+  #submit {
+    background-color: rgb(171, 16, 243);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+  } 
+  /* #submit:hover{
+    background-color: rgb(191, 103, 226);
+  }
+  #submit:active{
+    background-color: rgb(191, 103, 226);
+  } */
+  #table,
+  #table1 {
+    border: 1px solid black;
+    text-align: left;
+    width: 1350px;
+  }
+  /* #table tr th,
+  #table1 tr th {
+    border: 1px solid black;
+    margin: 30px;
+  } */
+  .search {
+    margin-bottom: 40px;
+    margin-top: -50px;
+    text-align: center;
+  }
+  input[type="text"],
+  input[type="date"],
+  input[type="time"] {
+    width: 20rem;
+    /* height: 2rem; */
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(51, 2, 116);
+    border-radius: 4px;
+  }
+  input[type="number"] {
+    width: 20rem;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(51, 2, 116);
+    border-radius: 4px;
+  }
+  /* .buttons2 button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }  */
+  /* .btn {
+    background-color: rgb(51, 2, 116);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+  } */
+  
+  /* .bgimg {
+    background-image: url(../src/images/0016F253_header-schaeffler-story-corona-pandemie-virus.jpg);
+     background-repeat: no-repeat; 
+    background-attachment: fixed;
+    max-height: fit-content;
+    max-width: fit-content;
+    opacity: 0.5;
+    height: 100%;
+    width: 100rem;
+    margin: 0; 
+  } */
+  
